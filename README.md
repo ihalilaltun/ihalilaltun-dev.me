@@ -1,2 +1,1 @@
-# ihalilaltun-dev.me
-personal site
+# ihalilaltun.me
