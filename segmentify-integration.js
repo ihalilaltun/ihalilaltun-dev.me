@@ -18,13 +18,12 @@
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wa, s);
     }
-  })('//cdn.segmentify.com/v3/qa/segmentify.debug.js', 'Segmentify', {
-    segmentifyApiUrl: '//gandalf-dev.segmentify.com/',
-    segmentifyPushUrl: '//gimli-dev.segmentify.com/',	  
+  })('//cdn.segmentify.com/qa/segmentify.debug.js', 'Segmentify', {
+    segmentifyApiUrl: '//dce-test.segmentify.com/',
     categoryHierarchy: true
   });
 
-  Segmentify('apikey', '8f6b9ae8-7d0e-455d-be6d-bdf7b74efcf7',true,false);
+  Segmentify('apikey', 'fbaef4d5-cc3a-4dd0-957d-9b0d2b95d308',true,false);
 
   function waitSegmentifyAndjQuery() {
     if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
