@@ -18,7 +18,7 @@
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wa, s);
     }
-  })('//cdn.segmentify.com/v3/qa/segmentify.debug.js', 'Segmentify', {
+  })('//cdn.segmentify.com/v3/dev/segmentify.debug.js', 'Segmentify', {
     segmentifyApiUrl: '//gandalf-dev.segmentify.com/',
     segmentifyPushUrl: '//gimli-dev.segmentify.com/',	  
     categoryHierarchy: true
