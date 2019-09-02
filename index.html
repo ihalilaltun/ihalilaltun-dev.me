@@ -27,23 +27,27 @@
         body {
             margin: 50px;
             color: gray;
-            text-decoration: none;            
+            text-decoration: none;
+        }
+        .fill-screen {
+            display: contents !important;
+            position: relative !important;
         }
 
         .rec-product > div {
             padding: 30px;
             background-color: blue;
-        }  
+        }
         .rec-product > div {
             margin: 30px;
             background-color: white;
             display: block;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
             border-radius: 15px;
-        }    
+        }
         .product-images > img {
             width: 50px;
-        }    
+        }
         span.product-title {
             font-size: 22px;
             display: block;
@@ -52,7 +56,7 @@
         }
         .old-price {
             text-decoration: line-through;
-            opacity: 0.3;            
+            opacity: 0.3;
         }
         button {
             display: block;
@@ -65,22 +69,77 @@
         }
         span.event-name {
             font-size: 18px;
-        }        
+        }
         .event-name-title {
             display: block;
             margin-top: 20px;
             font-size: 14px;
-            opacity: 0.6;     
-            margin-top: 30px;       
+            opacity: 0.6;
+            margin-top: 30px;
         }
+        form.searchForm input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+        }
+
+        form.searchForm button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+            margin-top:  0px !important;
+        }
+
+        form.searchForm button:hover {
+            background: #0b7dda;
+        }
+
+        form.searchForm::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
     </style>
     
 </head>
 <body>
+<script>
+
+    function waitSegmentifyAndjQuery() {
+        if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
+            document.getElementById("searchButton").onclick = function (){
+                var query = document.getElementById("searchText").value;
+                var request = {};
+                request.name = "SEARCH";
+                request.query = query;
+
+                Segmentify('search', request);
+
+            }
+        } else {
+            setTimeout(waitSegmentifyAndjQuery, 100);
+        }
+    }
+    waitSegmentifyAndjQuery();
+</script>
 
     <div class="homepage">
     <div class='fill-screen'><img class='make-it-fit' src='https://ihalilaltun-dev.me/at.jpg'></div>
-
+        <!-- The form -->
+        <form class="searchForm">
+            <input type="text" placeholder="Search.." name="search" id="searchText">
+            <button type="button" id="searchButton"><i class="fa fa-search"></i>Search</button>
+        </form>
 <div class="seg-product-container pure-g" style="margin-top: 50%;position: absolute;">
 
     <div class="rec-product seg-col-md-3 pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
