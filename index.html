@@ -113,26 +113,6 @@
     
 </head>
 <body>
-<script>
-
-    function waitSegmentifyAndjQuery() {
-        if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
-            document.getElementById("searchButton").onclick = function (){
-                var query = document.getElementById("searchText").value;
-                var request = {};
-                request.name = "SEARCH";
-                request.query = query;
-
-                Segmentify('search', request);
-
-            }
-        } else {
-            setTimeout(waitSegmentifyAndjQuery, 100);
-        }
-    }
-    waitSegmentifyAndjQuery();
-</script>
-
     <div class="homepage">
     <div class='fill-screen'><img class='make-it-fit' src='https://ihalilaltun-dev.me/at.jpg'></div>
         <!-- The form -->
