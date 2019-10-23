@@ -3032,7 +3032,7 @@ This classes is coming from JS
 .seg-search-wrapper.no-products {
   width: 240px;
 }
-.seg-search-wrapper.no-products.no-sidebar {
+.seg-search-wrapper:not(.mobile).no-products.no-sidebar {
   display: none !important;
 }
 .seg-search-wrapper.mobile.no-products .sgm-search-header {
