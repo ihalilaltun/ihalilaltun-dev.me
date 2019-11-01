@@ -178,7 +178,6 @@
     var init = function() {
       findPageType();
       triggerPageFunction(pageVariables.category);
-      _SgmntfY_._initSearch('');
     };
 
 
