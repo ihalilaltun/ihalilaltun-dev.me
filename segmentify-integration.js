@@ -32,7 +32,6 @@
 
       segJquery(document).ready(function() {
         SegmentifyIntegration(window.segJquery).init();
-	_SgmntfY_._initSearch('');
       });
     } else {
       setTimeout(waitSegmentifyAndjQuery, 100);
@@ -187,7 +186,7 @@
       "All Pages": function() {
         Segmentify('view:page',{'category':pageVariables.category,'lang':'EN',subCategory:'Shirt'})
         //segmentifyEvents.viewPage(pageVariables.category, pageVariables.subCategory, pageVariables.params);
-        
+        _SgmntfY_._initSearch('');
 
      
      
