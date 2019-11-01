@@ -32,7 +32,7 @@
 
       segJquery(document).ready(function() {
         SegmentifyIntegration(window.segJquery).init();
-	_SgmntfY_._initSearch('#searchText', '', false);
+	_SgmntfY_._initSearch('');
       });
     } else {
       setTimeout(waitSegmentifyAndjQuery, 100);
