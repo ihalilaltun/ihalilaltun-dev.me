@@ -178,6 +178,7 @@
     var init = function() {
       findPageType();
       triggerPageFunction(pageVariables.category);
+      _SgmntfY_._initSearch('');
     };
 
 
@@ -186,7 +187,6 @@
       "All Pages": function() {
         Segmentify('view:page',{'category':pageVariables.category,'lang':'EN',subCategory:'Shirt'})
         //segmentifyEvents.viewPage(pageVariables.category, pageVariables.subCategory, pageVariables.params);
-        _SgmntfY_._initSearch('');
 
      
      
