@@ -17,41 +17,11 @@
 
 </head>
 <body>
-    <div class='fill-screen' style="display: contents">
-        <div style="float: left; margin-bottom: 15px">
-            <button class="basket" id="addToBasket" title="Sepete Ekle"><span class="icon iconBasket"></span>Sepete Ekle</button>
-            <button class="basket" id="removeFromBasket" title="Sepete Ekle"><span class="icon iconBasket"></span>Sepetten Çıkar</button>
-        </div>
-        <div>
-            <img class='make-it-fit' src='https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/320w/products/29073/271288/In-Stock-2017-New-Original-Xiaomi-Mi-Drone-4K-Version-WIFI-FPV-With-30fps-Camera-3__21961.1559815730.jpg?c=2'>
-        </div>
-</div>
+
 
 <div id = "segmentify-integration-UI" class="segmentify-integration-UI"></div>
 
 <script type="text/javascript">
-    function waitSegmentifyAndjQuery() {
-        if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
-            window.segJquery = window["_SgmntfY_"]._getJq();
-
-            segJquery(document).ready(function() {
-                SegmentifyIntegration(window.segJquery).init();
-
-                window.segJquery("#addToBasket").click(function(){
-                    Segmentify('basket:add', {productId:"60000-2",quantity:1, price:665.75, nextPage:false});
-
-                });
-                window.segJquery("#removeFromBasket").click(function(){
-                    Segmentify('basket:remove', {productId:"60000-2", nextPage:false});
-
-                });
-
-            });
-        } else {
-            setTimeout(waitSegmentifyAndjQuery, 100);
-        }
-    }
-    waitSegmentifyAndjQuery();
 
 
     Segmentify('view:page', {
