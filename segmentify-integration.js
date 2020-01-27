@@ -110,10 +110,10 @@
     var findPageType = function() {
       try {
         /* Home Page, Category Page, Product Page, Basket Page, Search Page, Checkout Success Page */
-        if (document.location.pathname.split("/").slice(-1) == "") {
+        /*if (document.location.pathname.split("/").slice(-1) == "") {
           pageVariables.category = "Home Page";
           return;
-        }
+        }*/
 
         if (jQuery("body").hasClass("template-collection")) {
           pageVariables.category = "Category Page";
