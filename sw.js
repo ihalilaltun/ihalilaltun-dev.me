@@ -1,1 +1,1 @@
-importScripts('https://cdn.segmentify.com/dev/sw.js');
+importScripts('https://cdn.segmentify.com/v3/dev/sw.js');
