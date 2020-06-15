@@ -9,6 +9,7 @@
     window[namespace] = window[namespace] || function() {
       (window[namespace].q = window[namespace].q || []).push(arguments);
     };
+    window.sgfLayer = {};
     window[namespace].config = config || {};
     if (!document.getElementById('__segmentify_script__')) {
       var wa = document.createElement('script');
