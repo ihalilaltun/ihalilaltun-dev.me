@@ -22,7 +22,8 @@
   })('//cdn.segmentify.com/v3/dev/segmentify.debug.js', 'Segmentify', {
     segmentifyApiUrl: '//gandalf-dev.segmentify.com/',
     segmentifyPushUrl: '//gimli-dev.segmentify.com/',	  
-    categoryHierarchy: true
+    categoryHierarchy: true,
+    currency: 'TRY'
   });
 
   Segmentify('apikey', '8f6b9ae8-7d0e-455d-be6d-bdf7b74efcf7',true,false);
