@@ -26,7 +26,8 @@
     currency: 'TRY'
   });
 
-  Segmentify('apikey', '8f6b9ae8-7d0e-455d-be6d-bdf7b74efcf7',true,false);
+  //Segmentify('apikey', '8f6b9ae8-7d0e-455d-be6d-bdf7b74efcf7',true,false);
+  Segmentify('apiKey', '5cec3e12-475b-46db-bba4-cfd498dc19c3', true,false);
 
   function waitSegmentifyAndjQuery() {
     if (window["_SgmntfY_"] && window["_SgmntfY_"]._getJq()) {
@@ -201,17 +202,8 @@
         
         
        users = []
-	   users[1] = {"email": "cem.ayan@segmentify.com", "username": "cemayan", "fullName": "Cem Ayan"}
-       users[2] = {"email": "ahmet.babacan+atadam123123@segmentify.com", "username": "ababacan", "fullName": "Ahmet Babacan","birthDate":"03.10.2018"}
-
-       users[3] = {"email": "cem.ayan+a1@segmentify.com", "username": "cemayan1", "fullName": "Cem Ayan"}
-                     users[4] = {"email": "ahmet.babacan+qa@segmentify.com", "username": "ababacan", "fullName": "Ahmet Babacan"}
-       
-       
+      
        if(register!=""){
-        
-         
-
        Segmentify('user:signup',{
            "email": users[parseInt(register)].email,
            "username" : users[parseInt(register)].username,
@@ -253,9 +245,6 @@
            "fullName" : users[parseInt(logout)].fullName
 			}) 
         } 
-          
-          
-
           
           
         }
